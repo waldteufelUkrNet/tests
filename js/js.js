@@ -1,15 +1,62 @@
-setInterval(function(){
+let field = document.getElementById('field');
+let ball  = document.getElementById('ball');
 
-  let date = new Date();
-  let hh = date.getHours();
-  let mm = date.getMinutes();
-  let ss = date.getSeconds();
-  if ( hh < 10 ) hh = '0' + hh;
-  if ( mm < 10 ) mm = '0' + mm;
-  if ( ss < 10 ) ss = '0' + ss;
+field.onmouseup = function(event){
 
-  document.getElementsByClassName('hour')[0].innerHTML = hh;
-  document.getElementsByClassName('min')[0].innerHTML  = mm;
-  document.getElementsByClassName('sec')[0].innerHTML  = ss;
+  // координати кліку
+  let clickTop  = event.clientY;
+  let clickLeft = event.clientX;
 
-},1000);
+  // координати внутрішної частини поля
+  fieldTop    = field.offsetTop + field.clientTop;
+  fieldLeft   = field.offsetLeft + field.clientLeft;
+  fieldRight  = fieldLeft + field.clientWidth;
+  fiefdBottom = fieldTop + field.clientHeight;
+
+
+// console.log(`
+// ==================================================
+// координати зовнішнього лівого верхнього кута поля:
+// field.offsetTop  : ${field.offsetTop}
+// field.offsetLeft : ${field.offsetLeft}
+// ==================================================
+// товщина бортів:
+// field.clientTop  : ${field.clientTop}
+// field.clientLeft : ${field.clientLeft}
+// ==================================================
+// зовнішні розміри поля:
+// field.offsetWidth  : ${field.offsetWidth}
+// field.offsetHeight : ${field.offsetHeight}
+// внутрішні розміри поля:
+// field.clientWidth  : ${field.clientWidth}
+// field.clientHeight : ${field.clientHeight}
+// ==================================================
+// координати внутрішної частини поля:
+// fieldTop    : ${fieldTop}
+// fieldLeft   : ${fieldLeft}
+// fieldRight  : ${fieldRight}
+// fiefdBottom : ${fiefdBottom}
+// ==================================================
+// `);
+
+  // розміри м'яча
+  let ballWidth        = ball.offsetWidth;
+
+  let ballTop  = clickTop - fieldTop - ballWidth/2;
+  let ballLeft = clickLeft - fieldLeft - ballWidth/2;
+
+  if ( ballTop < 0 ) {
+    ballTop = 0;
+  } else if ( ballTop + ballWidth > field.clientHeight ) {
+    ballTop = field.clientHeight - ballWidth;
+  }
+
+  if ( ballLeft < 0 ) {
+    ballLeft = 0;
+  } else if ( ballLeft + ballWidth > field.clientWidth ) {
+    ballLeft = field.clientWidth - ballWidth;
+  }
+
+  ball.style.top  = ballTop + 'px';
+  ball.style.left = ballLeft + 'px';
+};
