@@ -2,9 +2,3 @@
 @import "reset";
 @import "style_general";
 
-#iframe {
-  margin: 20px;
-  width: calc(100% - 40px);
-  height: 400px;
-  border: 1px dashed red;
-}

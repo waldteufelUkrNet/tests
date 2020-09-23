@@ -1,5 +1,8 @@
-"use strict";
+// window.addEventListener('message', (e) => {
+//   console.log(`
+//     e.data: ${e.data},
+//     e.origin: ${e.origin},
+//     e.source: ${e.source}`);
 
-window.addEventListener('message', function (e) {
-  console.log("\n    e.data: ".concat(e.data, ",\n    e.origin: ").concat(e.origin, ",\n    e.source: ").concat(e.source)); // e.source.postMessage('data');
-});
+//     // e.source.postMessage('data');
+// });

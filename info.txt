@@ -1,2 +1,5 @@
-// відкрити попап. Сучасні браузери відкриють вкладку, а не вікно
-window.open('https://javascript.info/')
+let url1 = 'https://stock.crmhub.info/api/Stock?timer=1Ms&symbol=EURUSD',
+    url2 = 'https://core.crmhub.info/api/Stock?timer=1Ms&symbol=EURUSD',
+    url3 = 'https://fake-error';
+
+jsonplaceholder.typicode.com - для відпрацювання запитів

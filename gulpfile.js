@@ -94,7 +94,7 @@ gulp.task('sass', function() {
 // ES6 -> ES5: files
 gulp.task('js', function() {
   return gulp.src(['app/assets/js-expanded/*.js'])
-    .pipe(babel())
+    // .pipe(babel())
     // .pipe(uglify())
     .pipe(gulp.dest('app/assets/js'))
     .pipe(browserSync.reload({stream:true}));
