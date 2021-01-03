@@ -1,10 +1,7 @@
-let controller = new AbortController(),
-    signal     = controller.signal;
+let str = '<h1>Hello, world!</h1>';
 
-console.log("controller", controller);
+let tag = str.match(/<(.*?)>/);
+console.log("tag", tag);
 
-signal.addEventListener('abort', () => console.log('скасовано!'));
-
-controller.abort();
-
-console.log(signal.aborted);
+console.log( tag[0] ); // <h1>
+console.log( tag[1] ); // h1
