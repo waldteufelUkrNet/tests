@@ -2,3 +2,45 @@
 @import "reset";
 @import "style_general";
 
+.w-table {
+  border: 1px solid #dbf0fe;
+  border-collapse: collapse;
+  th, td {
+    border: 1px solid #dbf0fe;
+    border-collapse: collapse;
+    padding: 3px 6px;
+    vertical-align: middle;
+  }
+  th {
+    background-color: #bde0f6;
+    border: 1px solid lightsteelblue;
+  }
+  &__th_with-btns-group {}
+  &__th_with-btns-group-inner {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+  }
+  &__th-name {
+    text-align: center;
+    margin-right: 10px;
+    flex-frow: 1;
+  }
+  &__btns-group {
+    display: flex;
+  }
+  &__btn {
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid transparent;
+    svg {
+      height: 20px;
+    }
+  }
+  tr {
+    &:nth-of-type(even) {
+      background-color: #eef2f5;
+    }
+  }
+}

@@ -112,3 +112,63 @@ a, a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
+.w-table {
+  border: 1px solid #dbf0fe;
+  border-collapse: collapse;
+}
+
+.w-table th, .w-table td {
+  border: 1px solid #dbf0fe;
+  border-collapse: collapse;
+  padding: 3px 6px;
+  vertical-align: middle;
+}
+
+.w-table th {
+  background-color: #bde0f6;
+  border: 1px solid lightsteelblue;
+}
+
+.w-table__th_with-btns-group-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.w-table__th-name {
+  text-align: center;
+  margin-right: 10px;
+  flex-frow: 1;
+}
+
+.w-table__btns-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.w-table__btn {
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.w-table__btn svg {
+  height: 20px;
+}
+
+.w-table tr:nth-of-type(even) {
+  background-color: #eef2f5;
+}
