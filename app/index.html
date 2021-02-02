@@ -10,508 +10,767 @@
     <script defer src="assets/js/index.js"></script>
   </head>
   <body>
-    <table class="w-table">
-      <caption>name of the table</caption>
-      <thead>
-        <tr>
-          <th>checkbox</th>
-          <th>id</th>
-          <th>Клиент</th>
-          <th>login</th>
-          <th>Статус</th>
-          <th>Спец. статус</th>
-          <th class="w-table__th_with-btns-group">
-            <div class="w-table__th_with-btns-group-inner"><span class="w-table__th-name">Телефон</span>
-              <div class="w-table__btns-group">
-                <button class="w-table__btn" title="sort">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                    <path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
-                  </svg>
-                </button>
-                <button class="w-table__btn" title="search">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
-                  </svg>
-                </button>
-                <button class="w-table__btn" title="options">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
-                    <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </th>
-          <th>Почта</th>
-          <th>Компания (афилят)</th>
-          <th>Брокер</th>
-          <th>Должность брокера</th>
-          <th>Команда брокера</th>
-          <th>Тип платформы</th>
-          <th>Верификация</th>
-          <th>Страна</th>
-          <th>Язык</th>
-          <th>Наличие депозитов</th>
-          <th>Баланс</th>
-          <th>Валюта</th>
-          <th>Активность</th>
-          <th>Последняя активность</th>
-          <th>Возможность торговли</th>
-          <th>Дата регистрации</th>
-          <th>Дата последней заметки</th>
-          <th>Последняя заметка</th>
-          <th>Тип аккаунта</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>checkbox</td>
-          <td>1</td>
-          <td>Вася Пупкин</td>
-          <td>offline</td>
-          <td>new</td>
-          <td>specStatus1</td>
-          <td>79061234567</td>
-          <td>vasja.pupkin@mail.ru</td>
-          <td>Site Registration</td>
-          <td>Alexandr Melnikov</td>
-          <td>sales</td>
-          <td>sales1</td>
-          <td>binary</td>
-          <td>без верификации</td>
-          <td>Российская Федерация</td>
-          <td>русский</td>
-          <td>без депозитов</td>
-          <td>0</td>
-          <td>USD</td>
-          <td>активен</td>
-          <td>2021.01.14</td>
-          <td>не доступна</td>
-          <td>2021.01.06</td>
-          <td>2021.01.27</td>
-          <td>не берет трубку</td>
-          <td>start</td>
-        </tr>
-        <tr>
-          <td>checkbox</td>
-          <td>1</td>
-          <td>Вася Пупкин</td>
-          <td>offline</td>
-          <td>new</td>
-          <td>specStatus1</td>
-          <td>79061234567</td>
-          <td>vasja.pupkin@mail.ru</td>
-          <td>Site Registration</td>
-          <td>Alexandr Melnikov</td>
-          <td>sales</td>
-          <td>sales1</td>
-          <td>binary</td>
-          <td>без верификации</td>
-          <td>Российская Федерация</td>
-          <td>русский</td>
-          <td>без депозитов</td>
-          <td>0</td>
-          <td>USD</td>
-          <td>активен</td>
-          <td>2021.01.14</td>
-          <td>не доступна</td>
-          <td>2021.01.06</td>
-          <td>2021.01.27</td>
-          <td>не берет трубку</td>
-          <td>start</td>
-        </tr>
-        <tr>
-          <td>checkbox</td>
-          <td>1</td>
-          <td>Вася Пупкин</td>
-          <td>offline</td>
-          <td>new</td>
-          <td>specStatus1</td>
-          <td>79061234567</td>
-          <td>vasja.pupkin@mail.ru</td>
-          <td>Site Registration</td>
-          <td>Alexandr Melnikov</td>
-          <td>sales</td>
-          <td>sales1</td>
-          <td>binary</td>
-          <td>без верификации</td>
-          <td>Российская Федерация</td>
-          <td>русский</td>
-          <td>без депозитов</td>
-          <td>0</td>
-          <td>USD</td>
-          <td>активен</td>
-          <td>2021.01.14</td>
-          <td>не доступна</td>
-          <td>2021.01.06</td>
-          <td>2021.01.27</td>
-          <td>не берет трубку</td>
-          <td>start</td>
-        </tr>
-        <tr>
-          <td>checkbox</td>
-          <td>1</td>
-          <td>Вася Пупкин</td>
-          <td>offline</td>
-          <td>new</td>
-          <td>specStatus1</td>
-          <td>79061234567</td>
-          <td>vasja.pupkin@mail.ru</td>
-          <td>Site Registration</td>
-          <td>Alexandr Melnikov</td>
-          <td>sales</td>
-          <td>sales1</td>
-          <td>binary</td>
-          <td>без верификации</td>
-          <td>Российская Федерация</td>
-          <td>русский</td>
-          <td>без депозитов</td>
-          <td>0</td>
-          <td>USD</td>
-          <td>активен</td>
-          <td>2021.01.14</td>
-          <td>не доступна</td>
-          <td>2021.01.06</td>
-          <td>2021.01.27</td>
-          <td>не берет трубку</td>
-          <td>start</td>
-        </tr>
-        <tr>
-          <td>checkbox</td>
-          <td>1</td>
-          <td>Вася Пупкин</td>
-          <td>offline</td>
-          <td>new</td>
-          <td>specStatus1</td>
-          <td>79061234567</td>
-          <td>vasja.pupkin@mail.ru</td>
-          <td>Site Registration</td>
-          <td>Alexandr Melnikov</td>
-          <td>sales</td>
-          <td>sales1</td>
-          <td>binary</td>
-          <td>без верификации</td>
-          <td>Российская Федерация</td>
-          <td>русский</td>
-          <td>без депозитов</td>
-          <td>0</td>
-          <td>USD</td>
-          <td>активен</td>
-          <td>2021.01.14</td>
-          <td>не доступна</td>
-          <td>2021.01.06</td>
-          <td>2021.01.27</td>
-          <td>не берет трубку</td>
-          <td>start</td>
-        </tr>
-        <tr>
-          <td>checkbox</td>
-          <td>1</td>
-          <td>Вася Пупкин</td>
-          <td>offline</td>
-          <td>new</td>
-          <td>specStatus1</td>
-          <td>79061234567</td>
-          <td>vasja.pupkin@mail.ru</td>
-          <td>Site Registration</td>
-          <td>Alexandr Melnikov</td>
-          <td>sales</td>
-          <td>sales1</td>
-          <td>binary</td>
-          <td>без верификации</td>
-          <td>Российская Федерация</td>
-          <td>русский</td>
-          <td>без депозитов</td>
-          <td>0</td>
-          <td>USD</td>
-          <td>активен</td>
-          <td>2021.01.14</td>
-          <td>не доступна</td>
-          <td>2021.01.06</td>
-          <td>2021.01.27</td>
-          <td>не берет трубку</td>
-          <td>start</td>
-        </tr>
-        <tr>
-          <td>checkbox</td>
-          <td>1</td>
-          <td>Вася Пупкин</td>
-          <td>offline</td>
-          <td>new</td>
-          <td>specStatus1</td>
-          <td>79061234567</td>
-          <td>vasja.pupkin@mail.ru</td>
-          <td>Site Registration</td>
-          <td>Alexandr Melnikov</td>
-          <td>sales</td>
-          <td>sales1</td>
-          <td>binary</td>
-          <td>без верификации</td>
-          <td>Российская Федерация</td>
-          <td>русский</td>
-          <td>без депозитов</td>
-          <td>0</td>
-          <td>USD</td>
-          <td>активен</td>
-          <td>2021.01.14</td>
-          <td>не доступна</td>
-          <td>2021.01.06</td>
-          <td>2021.01.27</td>
-          <td>не берет трубку</td>
-          <td>start</td>
-        </tr>
-        <tr>
-          <td>checkbox</td>
-          <td>1</td>
-          <td>Вася Пупкин</td>
-          <td>offline</td>
-          <td>new</td>
-          <td>specStatus1</td>
-          <td>79061234567</td>
-          <td>vasja.pupkin@mail.ru</td>
-          <td>Site Registration</td>
-          <td>Alexandr Melnikov</td>
-          <td>sales</td>
-          <td>sales1</td>
-          <td>binary</td>
-          <td>без верификации</td>
-          <td>Российская Федерация</td>
-          <td>русский</td>
-          <td>без депозитов</td>
-          <td>0</td>
-          <td>USD</td>
-          <td>активен</td>
-          <td>2021.01.14</td>
-          <td>не доступна</td>
-          <td>2021.01.06</td>
-          <td>2021.01.27</td>
-          <td>не берет трубку</td>
-          <td>start</td>
-        </tr>
-        <tr>
-          <td>checkbox</td>
-          <td>1</td>
-          <td>Вася Пупкин</td>
-          <td>offline</td>
-          <td>new</td>
-          <td>specStatus1</td>
-          <td>79061234567</td>
-          <td>vasja.pupkin@mail.ru</td>
-          <td>Site Registration</td>
-          <td>Alexandr Melnikov</td>
-          <td>sales</td>
-          <td>sales1</td>
-          <td>binary</td>
-          <td>без верификации</td>
-          <td>Российская Федерация</td>
-          <td>русский</td>
-          <td>без депозитов</td>
-          <td>0</td>
-          <td>USD</td>
-          <td>активен</td>
-          <td>2021.01.14</td>
-          <td>не доступна</td>
-          <td>2021.01.06</td>
-          <td>2021.01.27</td>
-          <td>не берет трубку</td>
-          <td>start</td>
-        </tr>
-        <tr>
-          <td>checkbox</td>
-          <td>1</td>
-          <td>Вася Пупкин</td>
-          <td>offline</td>
-          <td>new</td>
-          <td>specStatus1</td>
-          <td>79061234567</td>
-          <td>vasja.pupkin@mail.ru</td>
-          <td>Site Registration</td>
-          <td>Alexandr Melnikov</td>
-          <td>sales</td>
-          <td>sales1</td>
-          <td>binary</td>
-          <td>без верификации</td>
-          <td>Российская Федерация</td>
-          <td>русский</td>
-          <td>без депозитов</td>
-          <td>0</td>
-          <td>USD</td>
-          <td>активен</td>
-          <td>2021.01.14</td>
-          <td>не доступна</td>
-          <td>2021.01.06</td>
-          <td>2021.01.27</td>
-          <td>не берет трубку</td>
-          <td>start</td>
-        </tr>
-        <tr>
-          <td>checkbox</td>
-          <td>1</td>
-          <td>Вася Пупкин</td>
-          <td>offline</td>
-          <td>new</td>
-          <td>specStatus1</td>
-          <td>79061234567</td>
-          <td>vasja.pupkin@mail.ru</td>
-          <td>Site Registration</td>
-          <td>Alexandr Melnikov</td>
-          <td>sales</td>
-          <td>sales1</td>
-          <td>binary</td>
-          <td>без верификации</td>
-          <td>Российская Федерация</td>
-          <td>русский</td>
-          <td>без депозитов</td>
-          <td>0</td>
-          <td>USD</td>
-          <td>активен</td>
-          <td>2021.01.14</td>
-          <td>не доступна</td>
-          <td>2021.01.06</td>
-          <td>2021.01.27</td>
-          <td>не берет трубку</td>
-          <td>start</td>
-        </tr>
-        <tr>
-          <td>checkbox</td>
-          <td>1</td>
-          <td>Вася Пупкин</td>
-          <td>offline</td>
-          <td>new</td>
-          <td>specStatus1</td>
-          <td>79061234567</td>
-          <td>vasja.pupkin@mail.ru</td>
-          <td>Site Registration</td>
-          <td>Alexandr Melnikov</td>
-          <td>sales</td>
-          <td>sales1</td>
-          <td>binary</td>
-          <td>без верификации</td>
-          <td>Российская Федерация</td>
-          <td>русский</td>
-          <td>без депозитов</td>
-          <td>0</td>
-          <td>USD</td>
-          <td>активен</td>
-          <td>2021.01.14</td>
-          <td>не доступна</td>
-          <td>2021.01.06</td>
-          <td>2021.01.27</td>
-          <td>не берет трубку</td>
-          <td>start</td>
-        </tr>
-        <tr>
-          <td>checkbox</td>
-          <td>1</td>
-          <td>Вася Пупкин</td>
-          <td>offline</td>
-          <td>new</td>
-          <td>specStatus1</td>
-          <td>79061234567</td>
-          <td>vasja.pupkin@mail.ru</td>
-          <td>Site Registration</td>
-          <td>Alexandr Melnikov</td>
-          <td>sales</td>
-          <td>sales1</td>
-          <td>binary</td>
-          <td>без верификации</td>
-          <td>Российская Федерация</td>
-          <td>русский</td>
-          <td>без депозитов</td>
-          <td>0</td>
-          <td>USD</td>
-          <td>активен</td>
-          <td>2021.01.14</td>
-          <td>не доступна</td>
-          <td>2021.01.06</td>
-          <td>2021.01.27</td>
-          <td>не берет трубку</td>
-          <td>start</td>
-        </tr>
-        <tr>
-          <td>checkbox</td>
-          <td>1</td>
-          <td>Вася Пупкин</td>
-          <td>offline</td>
-          <td>new</td>
-          <td>specStatus1</td>
-          <td>79061234567</td>
-          <td>vasja.pupkin@mail.ru</td>
-          <td>Site Registration</td>
-          <td>Alexandr Melnikov</td>
-          <td>sales</td>
-          <td>sales1</td>
-          <td>binary</td>
-          <td>без верификации</td>
-          <td>Российская Федерация</td>
-          <td>русский</td>
-          <td>без депозитов</td>
-          <td>0</td>
-          <td>USD</td>
-          <td>активен</td>
-          <td>2021.01.14</td>
-          <td>не доступна</td>
-          <td>2021.01.06</td>
-          <td>2021.01.27</td>
-          <td>не берет трубку</td>
-          <td>start</td>
-        </tr>
-        <tr>
-          <td>checkbox</td>
-          <td>1</td>
-          <td>Вася Пупкин</td>
-          <td>offline</td>
-          <td>new</td>
-          <td>specStatus1</td>
-          <td>79061234567</td>
-          <td>vasja.pupkin@mail.ru</td>
-          <td>Site Registration</td>
-          <td>Alexandr Melnikov</td>
-          <td>sales</td>
-          <td>sales1</td>
-          <td>binary</td>
-          <td>без верификации</td>
-          <td>Российская Федерация</td>
-          <td>русский</td>
-          <td>без депозитов</td>
-          <td>0</td>
-          <td>USD</td>
-          <td>активен</td>
-          <td>2021.01.14</td>
-          <td>не доступна</td>
-          <td>2021.01.06</td>
-          <td>2021.01.27</td>
-          <td>не берет трубку</td>
-          <td>start</td>
-        </tr>
-        <tr>
-          <td>checkbox</td>
-          <td>1</td>
-          <td>Вася Пупкин</td>
-          <td>offline</td>
-          <td>new</td>
-          <td>specStatus1</td>
-          <td>79061234567</td>
-          <td>vasja.pupkin@mail.ru</td>
-          <td>Site Registration</td>
-          <td>Alexandr Melnikov</td>
-          <td>sales</td>
-          <td>sales1</td>
-          <td>binary</td>
-          <td>без верификации</td>
-          <td>Российская Федерация</td>
-          <td>русский</td>
-          <td>без депозитов</td>
-          <td>0</td>
-          <td>USD</td>
-          <td>активен</td>
-          <td>2021.01.14</td>
-          <td>не доступна</td>
-          <td>2021.01.06</td>
-          <td>2021.01.27</td>
-          <td>не берет трубку</td>
-          <td>start</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="w-table">
+      <div class="w-table__header">Table Of Clients</div>
+      <div class="w-table__meta-data-wrapper">
+        <div class="w-table__label">filters:</div>
+        <div class="w-table__filters-wrapper">
+          <div class="w-table__filter-item"><span>froud</span>
+            <button class="w-table__filter-close-btn"></button>
+          </div>
+          <div class="w-table__filter-item"><span>sales</span>
+            <button class="w-table__filter-close-btn"></button>
+          </div>
+          <div class="w-table__filter-item"><span>noanswer1</span>
+            <button class="w-table__filter-close-btn"></button>
+          </div>
+        </div>
+        <div class="w-table__label">disabled columns:</div>
+        <div class="w-table__discols-wrapper">
+          <div class="w-table__discols-item"><span>last note</span>
+            <button class="w-table__discols-close-btn"></button>
+          </div>
+          <div class="w-table__discols-item"><span>brocker type</span>
+            <button class="w-table__discols-close-btn"></button>
+          </div>
+          <div class="w-table__discols-item"><span>spec.status</span>
+            <button class="w-table__discols-close-btn"></button>
+          </div>
+        </div>
+        <div class="w-table__label">items in DB:</div>
+        <div class="w-table__items-amount">21674</div>
+        <div class="w-table__label">filtered items:</div>
+        <div class="w-table__filtered-amount">163</div>
+        <div class="w-table__label">selected items:</div>
+        <div class="w-table__selected-amount">42</div>
+      </div>
+      <div class="w-table__table-wrapper" style="overflow: auto">
+        <table>
+          <thead>
+            <tr>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner">
+                  <input type="checkbox" style="margin-left:10px">
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner">
+                  <button class="w-table__btn w-table__btn_search" title="search"></button><span class="w-table__th-name">id</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort w-table__btn_active" title="sort"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner">
+                  <button class="w-table__btn w-table__btn_search" title="search"></button><span class="w-table__th-name">Клиент</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">login</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Статус</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Спец. статус</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner">
+                  <button class="w-table__btn w-table__btn_search" title="search"></button><span class="w-table__th-name">Телефон</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close">
+                      <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    </button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner">
+                  <button class="w-table__btn w-table__btn_search" title="search"></button><span class="w-table__th-name">Почта</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Компания (афилят)</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Брокер</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Должность брокера</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Команда брокера</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Тип платформы</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Верификация</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Страна</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Язык</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Наличие депозитов</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Баланс</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Валюта</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Активность</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Последняя активность</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Возможность торговли</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Дата регистрации</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Дата последней заметки</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Последняя заметка</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                  </div>
+                </div>
+              </th>
+              <th class="w-table__th" title="drag'n'drop">
+                <div class="w-table__th-inner"><span class="w-table__th-name">Тип аккаунта</span>
+                  <div class="w-table__btns-group">
+                    <button class="w-table__btn w-table__btn_close" title="close"></button>
+                    <button class="w-table__btn w-table__btn_sort" title="sort"></button>
+                    <button class="w-table__btn w-table__btn_options" title="options"></button>
+                  </div>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>1</td>
+              <td>Вася Пупкин</td>
+              <td>offline</td>
+              <td>new</td>
+              <td>specStatus1</td>
+              <td>79061234567</td>
+              <td>vasja.pupkin@mail.ru</td>
+              <td>Site Registration</td>
+              <td>Alexandr Melnikov</td>
+              <td>sales</td>
+              <td>sales1</td>
+              <td>binary</td>
+              <td>без верификации</td>
+              <td>Российская Федерация</td>
+              <td>русский</td>
+              <td>без депозитов</td>
+              <td>0</td>
+              <td>USD</td>
+              <td>активен</td>
+              <td>2021.01.14</td>
+              <td>не доступна</td>
+              <td>2021.01.06</td>
+              <td>2021.01.27</td>
+              <td>не берет трубку</td>
+              <td>start</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>1</td>
+              <td>Вася Пупкин</td>
+              <td>offline</td>
+              <td>new</td>
+              <td>specStatus1</td>
+              <td>79061234567</td>
+              <td>vasja.pupkin@mail.ru</td>
+              <td>Site Registration</td>
+              <td>Alexandr Melnikov</td>
+              <td>sales</td>
+              <td>sales1</td>
+              <td>binary</td>
+              <td>без верификации</td>
+              <td>Российская Федерация</td>
+              <td>русский</td>
+              <td>без депозитов</td>
+              <td>0</td>
+              <td>USD</td>
+              <td>активен</td>
+              <td>2021.01.14</td>
+              <td>не доступна</td>
+              <td>2021.01.06</td>
+              <td>2021.01.27</td>
+              <td>не берет трубку</td>
+              <td>start</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>1</td>
+              <td>Вася Пупкин</td>
+              <td>offline</td>
+              <td>new</td>
+              <td>specStatus1</td>
+              <td>79061234567</td>
+              <td>vasja.pupkin@mail.ru</td>
+              <td>Site Registration</td>
+              <td>Alexandr Melnikov</td>
+              <td>sales</td>
+              <td>sales1</td>
+              <td>binary</td>
+              <td>без верификации</td>
+              <td>Российская Федерация</td>
+              <td>русский</td>
+              <td>без депозитов</td>
+              <td>0</td>
+              <td>USD</td>
+              <td>активен</td>
+              <td>2021.01.14</td>
+              <td>не доступна</td>
+              <td>2021.01.06</td>
+              <td>2021.01.27</td>
+              <td>не берет трубку</td>
+              <td>start</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>1</td>
+              <td>Вася Пупкин</td>
+              <td>offline</td>
+              <td>new</td>
+              <td>specStatus1</td>
+              <td>79061234567</td>
+              <td>vasja.pupkin@mail.ru</td>
+              <td>Site Registration</td>
+              <td>Alexandr Melnikov</td>
+              <td>sales</td>
+              <td>sales1</td>
+              <td>binary</td>
+              <td>без верификации</td>
+              <td>Российская Федерация</td>
+              <td>русский</td>
+              <td>без депозитов</td>
+              <td>0</td>
+              <td>USD</td>
+              <td>активен</td>
+              <td>2021.01.14</td>
+              <td>не доступна</td>
+              <td>2021.01.06</td>
+              <td>2021.01.27</td>
+              <td>не берет трубку</td>
+              <td>start</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>1</td>
+              <td>Вася Пупкин</td>
+              <td>offline</td>
+              <td>new</td>
+              <td>specStatus1</td>
+              <td>79061234567</td>
+              <td>vasja.pupkin@mail.ru</td>
+              <td>Site Registration</td>
+              <td>Alexandr Melnikov</td>
+              <td>sales</td>
+              <td>sales1</td>
+              <td>binary</td>
+              <td>без верификации</td>
+              <td>Российская Федерация</td>
+              <td>русский</td>
+              <td>без депозитов</td>
+              <td>0</td>
+              <td>USD</td>
+              <td>активен</td>
+              <td>2021.01.14</td>
+              <td>не доступна</td>
+              <td>2021.01.06</td>
+              <td>2021.01.27</td>
+              <td>не берет трубку</td>
+              <td>start</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>1</td>
+              <td>Вася Пупкин</td>
+              <td>offline</td>
+              <td>new</td>
+              <td>specStatus1</td>
+              <td>79061234567</td>
+              <td>vasja.pupkin@mail.ru</td>
+              <td>Site Registration</td>
+              <td>Alexandr Melnikov</td>
+              <td>sales</td>
+              <td>sales1</td>
+              <td>binary</td>
+              <td>без верификации</td>
+              <td>Российская Федерация</td>
+              <td>русский</td>
+              <td>без депозитов</td>
+              <td>0</td>
+              <td>USD</td>
+              <td>активен</td>
+              <td>2021.01.14</td>
+              <td>не доступна</td>
+              <td>2021.01.06</td>
+              <td>2021.01.27</td>
+              <td>не берет трубку</td>
+              <td>start</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>1</td>
+              <td>Вася Пупкин</td>
+              <td>offline</td>
+              <td>new</td>
+              <td>specStatus1</td>
+              <td>79061234567</td>
+              <td>vasja.pupkin@mail.ru</td>
+              <td>Site Registration</td>
+              <td>Alexandr Melnikov</td>
+              <td>sales</td>
+              <td>sales1</td>
+              <td>binary</td>
+              <td>без верификации</td>
+              <td>Российская Федерация</td>
+              <td>русский</td>
+              <td>без депозитов</td>
+              <td>0</td>
+              <td>USD</td>
+              <td>активен</td>
+              <td>2021.01.14</td>
+              <td>не доступна</td>
+              <td>2021.01.06</td>
+              <td>2021.01.27</td>
+              <td>не берет трубку</td>
+              <td>start</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>1</td>
+              <td>Вася Пупкин</td>
+              <td>offline</td>
+              <td>new</td>
+              <td>specStatus1</td>
+              <td>79061234567</td>
+              <td>vasja.pupkin@mail.ru</td>
+              <td>Site Registration</td>
+              <td>Alexandr Melnikov</td>
+              <td>sales</td>
+              <td>sales1</td>
+              <td>binary</td>
+              <td>без верификации</td>
+              <td>Российская Федерация</td>
+              <td>русский</td>
+              <td>без депозитов</td>
+              <td>0</td>
+              <td>USD</td>
+              <td>активен</td>
+              <td>2021.01.14</td>
+              <td>не доступна</td>
+              <td>2021.01.06</td>
+              <td>2021.01.27</td>
+              <td>не берет трубку</td>
+              <td>start</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>1</td>
+              <td>Вася Пупкин</td>
+              <td>offline</td>
+              <td>new</td>
+              <td>specStatus1</td>
+              <td>79061234567</td>
+              <td>vasja.pupkin@mail.ru</td>
+              <td>Site Registration</td>
+              <td>Alexandr Melnikov</td>
+              <td>sales</td>
+              <td>sales1</td>
+              <td>binary</td>
+              <td>без верификации</td>
+              <td>Российская Федерация</td>
+              <td>русский</td>
+              <td>без депозитов</td>
+              <td>0</td>
+              <td>USD</td>
+              <td>активен</td>
+              <td>2021.01.14</td>
+              <td>не доступна</td>
+              <td>2021.01.06</td>
+              <td>2021.01.27</td>
+              <td>не берет трубку</td>
+              <td>start</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>1</td>
+              <td>Вася Пупкин</td>
+              <td>offline</td>
+              <td>new</td>
+              <td>specStatus1</td>
+              <td>79061234567</td>
+              <td>vasja.pupkin@mail.ru</td>
+              <td>Site Registration</td>
+              <td>Alexandr Melnikov</td>
+              <td>sales</td>
+              <td>sales1</td>
+              <td>binary</td>
+              <td>без верификации</td>
+              <td>Российская Федерация</td>
+              <td>русский</td>
+              <td>без депозитов</td>
+              <td>0</td>
+              <td>USD</td>
+              <td>активен</td>
+              <td>2021.01.14</td>
+              <td>не доступна</td>
+              <td>2021.01.06</td>
+              <td>2021.01.27</td>
+              <td>не берет трубку</td>
+              <td>start</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>1</td>
+              <td>Вася Пупкин</td>
+              <td>offline</td>
+              <td>new</td>
+              <td>specStatus1</td>
+              <td>79061234567</td>
+              <td>vasja.pupkin@mail.ru</td>
+              <td>Site Registration</td>
+              <td>Alexandr Melnikov</td>
+              <td>sales</td>
+              <td>sales1</td>
+              <td>binary</td>
+              <td>без верификации</td>
+              <td>Российская Федерация</td>
+              <td>русский</td>
+              <td>без депозитов</td>
+              <td>0</td>
+              <td>USD</td>
+              <td>активен</td>
+              <td>2021.01.14</td>
+              <td>не доступна</td>
+              <td>2021.01.06</td>
+              <td>2021.01.27</td>
+              <td>не берет трубку</td>
+              <td>start</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>1</td>
+              <td>Вася Пупкин</td>
+              <td>offline</td>
+              <td>new</td>
+              <td>specStatus1</td>
+              <td>79061234567</td>
+              <td>vasja.pupkin@mail.ru</td>
+              <td>Site Registration</td>
+              <td>Alexandr Melnikov</td>
+              <td>sales</td>
+              <td>sales1</td>
+              <td>binary</td>
+              <td>без верификации</td>
+              <td>Российская Федерация</td>
+              <td>русский</td>
+              <td>без депозитов</td>
+              <td>0</td>
+              <td>USD</td>
+              <td>активен</td>
+              <td>2021.01.14</td>
+              <td>не доступна</td>
+              <td>2021.01.06</td>
+              <td>2021.01.27</td>
+              <td>не берет трубку</td>
+              <td>start</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>1</td>
+              <td>Вася Пупкин</td>
+              <td>offline</td>
+              <td>new</td>
+              <td>specStatus1</td>
+              <td>79061234567</td>
+              <td>vasja.pupkin@mail.ru</td>
+              <td>Site Registration</td>
+              <td>Alexandr Melnikov</td>
+              <td>sales</td>
+              <td>sales1</td>
+              <td>binary</td>
+              <td>без верификации</td>
+              <td>Российская Федерация</td>
+              <td>русский</td>
+              <td>без депозитов</td>
+              <td>0</td>
+              <td>USD</td>
+              <td>активен</td>
+              <td>2021.01.14</td>
+              <td>не доступна</td>
+              <td>2021.01.06</td>
+              <td>2021.01.27</td>
+              <td>не берет трубку</td>
+              <td>start</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>1</td>
+              <td>Вася Пупкин</td>
+              <td>offline</td>
+              <td>new</td>
+              <td>specStatus1</td>
+              <td>79061234567</td>
+              <td>vasja.pupkin@mail.ru</td>
+              <td>Site Registration</td>
+              <td>Alexandr Melnikov</td>
+              <td>sales</td>
+              <td>sales1</td>
+              <td>binary</td>
+              <td>без верификации</td>
+              <td>Российская Федерация</td>
+              <td>русский</td>
+              <td>без депозитов</td>
+              <td>0</td>
+              <td>USD</td>
+              <td>активен</td>
+              <td>2021.01.14</td>
+              <td>не доступна</td>
+              <td>2021.01.06</td>
+              <td>2021.01.27</td>
+              <td>не берет трубку</td>
+              <td>start</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>1</td>
+              <td>Вася Пупкин</td>
+              <td>offline</td>
+              <td>new</td>
+              <td>specStatus1</td>
+              <td>79061234567</td>
+              <td>vasja.pupkin@mail.ru</td>
+              <td>Site Registration</td>
+              <td>Alexandr Melnikov</td>
+              <td>sales</td>
+              <td>sales1</td>
+              <td>binary</td>
+              <td>без верификации</td>
+              <td>Российская Федерация</td>
+              <td>русский</td>
+              <td>без депозитов</td>
+              <td>0</td>
+              <td>USD</td>
+              <td>активен</td>
+              <td>2021.01.14</td>
+              <td>не доступна</td>
+              <td>2021.01.06</td>
+              <td>2021.01.27</td>
+              <td>не берет трубку</td>
+              <td>start</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td>1</td>
+              <td>Вася Пупкин</td>
+              <td>offline</td>
+              <td>new</td>
+              <td>specStatus1</td>
+              <td>79061234567</td>
+              <td>vasja.pupkin@mail.ru</td>
+              <td>Site Registration</td>
+              <td>Alexandr Melnikov</td>
+              <td>sales</td>
+              <td>sales1</td>
+              <td>binary</td>
+              <td>без верификации</td>
+              <td>Российская Федерация</td>
+              <td>русский</td>
+              <td>без депозитов</td>
+              <td>0</td>
+              <td>USD</td>
+              <td>активен</td>
+              <td>2021.01.14</td>
+              <td>не доступна</td>
+              <td>2021.01.06</td>
+              <td>2021.01.27</td>
+              <td>не берет трубку</td>
+              <td>start</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="w-table__pagination-wrapper">
+        <button class="w-table__page-btn" type="button">1</button>
+        <button class="w-table__page-btn" type="button">2</button>
+        <button class="w-table__page-btn" type="button">3</button>
+        <button class="w-table__page-btn" type="button">4</button>
+        <button class="w-table__page-btn" type="button">5</button>
+        <button class="w-table__page-btn" type="button">6</button>
+        <button class="w-table__page-btn" type="button">7</button>
+      </div>
+    </div>
   </body>
 </html>
