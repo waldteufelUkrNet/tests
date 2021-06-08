@@ -2,27 +2,14 @@
 @import "reset";
 @import "style_general";
 
-input[type='checkbox'] {
-  display: none;
+.anime {
+  color: black;
+  text-shadow: 0 0 1px black;
+  font-size: 120px;
+  font-weight: 900;
+  transition: color 2s
 }
 
-input[type='checkbox'] + label {
-  width: 140px;
-  height: 140px;
-  display: block;
-}
-
-input[type='checkbox'] + label::before {
-  content: '';
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-image: url('../img/checkbox-sprite.png');
-  background-position: -8px -35px;
-  background-size: 109px 109px;
-  background-repeat: no-repeat;
-}
-
-input[type='checkbox']:checked + label:before {
-  background-position: -61px -35px;
+.redLigth {
+  color: red;
 }
