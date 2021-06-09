@@ -1,98 +1,45 @@
-def encode_morze(text): # string
-  # return string
-  # . = ^
-  # - = ^^^
-  # after point or dash 1 _
-  # after letter 3 _
-  # after world 7 _
-  # after message 0 _
-  # only english letter lowercase/uppercase
-  morse_code = {
-    "A" : ".-",
-    "B" : "-...",
-    "C" : "-.-.",
-    "D" : "-..",
-    "E" : ".",
-    "F" : "..-.",
-    "G" : "--.",
-    "H" : "....",
-    "I" : "..",
-    "J" : ".---",
-    "K" : "-.-",
-    "L" : ".-..",
-    "M" : "--",
-    "N" : "-.",
-    "O" : "---",
-    "P" : ".--.",
-    "Q" : "--.-",
-    "R" : ".-.",
-    "S" : "...",
-    "T" : "-",
-    "U" : "..-",
-    "V" : "...-",
-    "W" : ".--",
-    "X" : "-..-",
-    "Y" : "-.--",
-    "Z" : "--.."
-  }
-  morse_code_processed = {}
-  for key in morse_code:
-    encoded_letter = ''
-    if morse_code[key][0] == '.':
-      encoded_letter = encoded_letter + '^'
+def find_most_frequent(text): # str: a-z ,.:;!?-
+  # return alphabetical list of words in lowercase > 2
+  # hand-made == hand, made
+  # page != pages
+  # page == Page
+
+  l_text = text.lower()
+  wordsArr = []
+  currentWord = ''
+
+  # build array of all words
+  for letter in l_text:
+    if letter >= 'a' and letter <= 'z':
+      currentWord = currentWord + letter
     else:
-      encoded_letter = encoded_letter + '^^^'
+      if len(currentWord) > 0:
+        wordsArr.append(currentWord)
+      currentWord = ''
 
-    for symbol in morse_code[key][1:]:
-      if symbol == '.':
-        encoded_letter = encoded_letter + '_' + '^'
-      else:
-        encoded_letter = encoded_letter + '_' + '^^^'
+  resultArr = []
+  copiedArr = []
+  for word in wordsArr:
+    copiedArr.append(word)
 
-    morse_code_processed[key] = encoded_letter
+  for word in wordsArr:
+    count = 0
+    for word2 in copiedArr:
+      if str(word) == str(word2):
+        count = count + 1
 
-  def encode_word(word):
-
-    # filter no-letter
-    filtered_word = ''
-    for letter in word:
-      if letter >= 'A' and letter <= 'Z':
-        filtered_word = filtered_word + letter
-
-    if len(filtered_word) == 0:
-      return ''
-
-    # letter-word into dot-dash-word
-    result_word = morse_code_processed[ filtered_word[0] ]
-
-    for letter in filtered_word[1:]:
-      result_word = result_word + '___' + morse_code_processed[letter]
-
-    return result_word
-
-
-  string = text.upper()
-  wordsArr = string.split(' ')
-
-  result = encode_word( wordsArr[0] )
-  for word in wordsArr[1:]:
-    result = result + '_______' + encode_word( word )
-
-  return result
+    if count > 1 and not word in resultArr:
+      resultArr.append(word)
+  resultArr.sort()
+  return resultArr
 
 print '===== start ====='
-print 'right result: ^^^_^^^___^^^_^^^_^^^___^_^^^_^___^^^_^^^_^_^___^_______^^^_^_^^^_^___^^^_^^^_^^^___^^^_^_^___^'
-print 'my result   : ' + str(encode_morze('Morze code'))
+print "right result: ['hello']"
+print 'my result   : ' + str( find_most_frequent('Hello,Hello, my dear!') )
 print '-----------------'
-print 'right result: ^_^^^_^^^_^___^_^^^_^___^^^_^^^_^^^___^^^_^^^___^___^^^___^_^_^_^___^___^_^_^^^___^_^_^'
-print 'my result   : ' + str(encode_morze('Prometheus'))
+print "right result:  ['recursion', 'to', 'understand']"
+print 'my result   : ' + str( find_most_frequent('to understand recursion you need first to understand recursion...') )
 print '-----------------'
-print 'right result: ^_^_^___^^^_^^^_^^^___^_^_^'
-print 'my result   : ' + str(encode_morze('SOS'))
-print '-----------------'
-print 'right result: '
-print 'my result   : ' + str(encode_morze('1'))
-print '-----------------'
-print 'right result: '
-print 'my result   : ' + str(encode_morze(''))
+print "right result: ['mom']"
+print 'my result   : ' + str( find_most_frequent('Mom! Mom! Are you sleeping?!!!') )
 print '=====  end  ====='
