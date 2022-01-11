@@ -1,24 +1,3 @@
-## commit to merge from r1? second
-
-
-def print_maze(maze,x,y):
-    for i in range(len(maze)):
-        s = ''
-        for j in range(len(maze)):
-            if i == x and j == y:
-                s += 'X'
-            elif maze[i][j] == 1:
-                s += '1'
-            else:
-                s += '.'
-        print s
-    print ' '
-
-
-class newSomeClass(): {
-  # sdfffvdfdf
-}
-
 class MazeRunnerChanged1(object):
 
     def go(self):
@@ -50,7 +29,7 @@ def maze_controller(maze_runner):
   import random
   def left():
     maze_runner.turn_left()
-  def right():
+  def rightrr():
     maze_runner.turn_right()
   def around():
     left()
