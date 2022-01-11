@@ -11,14 +11,12 @@ def print_maze(maze,x,y):
         print s
     print ' '
 
-class MazeRunnerChanged(object):
 
-    def __init__(self, maze, start, finish):
-        self.__maze = maze
-        self.__rotation = (1,0)
-        self.__x = start[0]
-        self.__y = start[1]
-        self.__finish = finish
+class newSomeClass(): {
+  # sdfffvdfdf
+}
+
+class MazeRunnerChanged1(object):
 
     def go(self):
         x = self.__x + self.__rotation[0]
