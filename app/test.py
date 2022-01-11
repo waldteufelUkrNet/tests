@@ -11,7 +11,7 @@ def print_maze(maze,x,y):
         print s
     print ' '
 
-class MazeRunner(object):
+class MazeRunnerChanged(object):
 
     def __init__(self, maze, start, finish):
         self.__maze = maze
