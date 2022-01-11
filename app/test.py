@@ -48,6 +48,7 @@ class MazeRunnerChanged1(object):
         self.__rotation = left_rotation[self.__rotation]
         return self
 
+<<<<<<< HEAD
     def turn_right1(self):
         right_rotation = {
             (1,0): (0,1),
@@ -61,6 +62,8 @@ class MazeRunnerChanged1(object):
     def found(self):
         return self.__x == self.__finish[0] and self.__y == self.__finish[1]
 
+=======
+>>>>>>> r1
 ################################################################################
 
 def maze_controller(maze_runner):
