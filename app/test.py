@@ -41,9 +41,6 @@ class MazeRunnerChanged1(object):
         self.__rotation = left_rotation[self.__rotation]
         return self
 
-    def found(self):
-        return self.__x == self.__finish[0] and self.__y == self.__finish[1]
-
 ################################################################################
 
 def maze_controller(maze_runner):
