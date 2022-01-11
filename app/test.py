@@ -11,6 +11,7 @@ def print_maze(maze,x,y):
         print s
     print ' '
 
+
 class newSomeClass(): {
   # sdfffvdfdf
 }
@@ -38,13 +39,22 @@ class MazeRunnerChanged2(object):
         #print_maze(self.__maze, self.__x, self.__y)
         return True
 
+    def turn_left(self):
+        left_rotation = {
+            (0,1): (1,0),
+            (1,0): (0,-1),
+            (0,-1): (-1,0),
+            (-1,0): (0,1),
+        }
+        self.__rotation = left_rotation[self.__rotation]
+        return self
 
     def turn_right1(self):
         right_rotation = {
             (1,0): (0,1),
             (0,-1): (1,0),
             (-1,0): (0,-1),
-
+            (0,1): (-1,0),
         }
         self.__rotation = right_rotation[self.__rotation]
         return self
