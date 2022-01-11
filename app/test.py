@@ -13,7 +13,7 @@ def print_maze(maze,x,y):
 
 
 class newSomeClass(): {
-  # sdfffvdfdf
+  # here comment from master
 }
 
 class MazeRunnerChanged1(object):
