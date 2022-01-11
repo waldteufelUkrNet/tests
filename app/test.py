@@ -1,6 +1,3 @@
-## commit to merge from r1
-
-
 def print_maze(maze,x,y):
     for i in range(len(maze)):
         s = ''
@@ -16,7 +13,6 @@ def print_maze(maze,x,y):
 
 
 class newSomeClass(): {
-  # here comment from master
 }
 
 class MazeRunnerChanged1(object):
