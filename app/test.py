@@ -97,8 +97,6 @@ def maze_controller(maze_runner):
       left()
       return False
 
-  ways = []
-  while maze_runner.found() == False:
 
     if isPathLeft():
       ways.append('l')
@@ -133,6 +131,11 @@ def maze_controller(maze_runner):
   # forward()
 
 # x + s ?
+
+
+
+
+1+1=2
 
 ################################################################################
 
