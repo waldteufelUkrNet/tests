@@ -1,3 +1,6 @@
+## commit to merge from r1
+
+
 def print_maze(maze,x,y):
     for i in range(len(maze)):
         s = ''
