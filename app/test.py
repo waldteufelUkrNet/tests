@@ -17,7 +17,6 @@ class newSomeClass(): {
 }
 
 class MazeRunnerChanged1(object):
-class MazeRunnerChanged2(object):
 
     def __init__(self, maze, start, finish):
         self.__maze = maze
