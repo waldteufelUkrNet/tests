@@ -78,6 +78,7 @@ def maze_controller(maze_runner):
     else:
       right()
       return False
+  # some comment
   def isPathForward():
     res = forward()
     if res:
