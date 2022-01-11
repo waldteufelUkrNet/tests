@@ -1,28 +1,4 @@
-def print_maze(maze,x,y):
-    for i in range(len(maze)):
-        s = ''
-        for j in range(len(maze)):
-            if i == x and j == y:
-                s += 'X'
-            elif maze[i][j] == 1:
-                s += '1'
-            else:
-                s += '.'
-        print s
-    print ' '
-
-
-class newSomeClass(): {
-}
-
 class MazeRunnerChanged1(object):
-
-    def __init__(self, maze, start, finish):
-        self.__maze = maze
-        self.__rotation = (1,0)
-        self.__x = start[0]
-        self.__y = start[1]
-        self.__finish = finish
 
     def go(self):
         x = self.__x + self.__rotation[0]
@@ -47,29 +23,12 @@ class MazeRunnerChanged1(object):
         self.__rotation = left_rotation[self.__rotation]
         return self
 
-<<<<<<< HEAD
-    def turn_right1(self):
-        right_rotation = {
-            (1,0): (0,1),
-            (0,-1): (1,0),
-            (-1,0): (0,-1),
-            (0,1): (-1,0),
-        }
-        self.__rotation = right_rotation[self.__rotation]
-        return self
-
-    def found(self):
-        return self.__x == self.__finish[0] and self.__y == self.__finish[1]
-
-=======
->>>>>>> r1
 ################################################################################
 
 def maze_controller(maze_runner):
   import random
   def left():
     maze_runner.turn_left()
-  def right():
     maze_runner.turn_right()
   def around():
     left()
@@ -88,6 +47,8 @@ def maze_controller(maze_runner):
       right()
       return False
   def isPathForward222():
+  # some comment
+  def isPathForward():
     res = forward()
     if res:
       around()
@@ -108,6 +69,8 @@ def maze_controller(maze_runner):
       left()
       return False
 
+  ways = []
+  while maze_runner.found() == False:
 
     if isPathLeft():
       ways.append('l')
