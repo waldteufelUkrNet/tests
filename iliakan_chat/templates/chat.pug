@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1 Чат
+
+  style
+    include ../public/stylesheets/chat.css
+  -
+    let username = user.username;
+    let userid   = user._id;
+
+  p Привіт, #{username}! Твій id: #{userid}.
+
+  .messages-area
+    //- span.message Здоров!
+    //- span.message.message_my Привіт)
+
+  form#sendMessageForm
+    input(type='text' placeholder="написати повідомлення...")
+    button(type="submit") надіслати
+
+  script
+    include ../libs/socket.io-client.js
+  script
+    include ../public/javascripts/chat.js

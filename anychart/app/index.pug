@@ -1,0 +1,71 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description' content="???")
+
+    title TITLE
+    link(rel='icon', href='assets/img/bittrex-logo-mark.svg')
+
+    // ↓↓↓ VERSION CONTROL SYSTEM ↓↓↓
+    script.
+      // js із версіями файлів js/css щоразу завантажується новий
+      document.write('\
+        <script src="assets/js/version-control.js?version=' + Date.now() + '"><\/script>\
+      ');
+    script.
+      // ці файли завантажуються з кешу, або (якщо були зміни) - з нету
+      document.write('\
+        <!-- css-libs -->\
+        <link rel="stylesheet" type="text/css" href="assets/libs-css/anychart-font.min.css?version=' + v.anychartFontMinCss + '">\
+        <!-- own stylesheet -->\
+        <link rel="stylesheet" type="text/css" href="assets/css/index.css?version=' + v.indexCss + '">\
+        <link rel="stylesheet" type="text/css" href="assets/css/safari-fix.css?version=' + v.safariFixCss + '">\
+      ');
+    // ↑↑↑ /VERSION CONTROL SYSTEM ↑↑↑
+  body
+
+    // POPUPS
+    include assets/modules/popups/popups.pug
+    // /POPUPS
+
+    // HEADER
+    include assets/modules/header/header.pug
+    // /HEADER
+
+    // MAIN SECTION
+    main.main
+      include assets/modules/nav/nav.pug
+      include assets/modules/graphic-panel/graphic-panel.pug
+      #content-container
+        #main-area
+          #aside-wrapper
+            include assets/modules/aside/aside.pug
+          #content-wrapper
+            include assets/modules/content/content.pug
+        #info-area-wrapper
+          include assets/modules/info-area/info-area.pug
+    // /MAIN SECTION
+
+    // FOOTER
+    //- include assets/modules/footer/footer.pug
+    // /FOOTER
+
+    // ↓↓↓ VERSION CONTROL SYSTEM ↓↓↓
+    script.
+      // ці файли завантажуються з кешу, або (якщо були зміни) - з нету
+      document.write('\
+        <!-- js-libs -->\
+        <script src="assets/libs-js/anychart-core.min.js?version='        + v.anychartCoreMinJs        + '"><\/script>\
+        <script src="assets/libs-js/anychart-stock.min.js?version='       + v.anychartStockMinJs       + '"><\/script>\
+        <script src="assets/libs-js/anychart-annotations.min.js?version=' + v.anychartAnnotationsMinJs + '"><\/script>\
+        <!-- own js -->\
+        <script src="assets/js/index.js?version='      + v.indexJs      + '"><\/script>\
+        <script src="assets/js/modules.js?version='    + v.modulesJS    + '"><\/script>\
+        <script src="assets/js/safari-fix.js?version=' + v.safariFixJS  + '"><\/script>\
+        <script src="assets/js/anychart.js?version='   + v.anychartJs   + '"><\/script>\
+      ');
+    // ↑↑↑ /VERSION CONTROL SYSTEM ↑↑↑
+    //- script(src='assets/js/form-registration.js')
+    //- script(src='assets/js/popups.js')

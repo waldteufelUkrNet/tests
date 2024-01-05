@@ -1,0 +1,55 @@
+@import "reset";
+@import "fonts";
+@import "style_general";
+// @import "index/index_768+";
+
+html {
+  font                 : 12px tr;
+}
+
+body {
+  width                : 100vw;
+  height               : 100vh;
+  overflow             : hidden;
+  position             : relative;
+  background-color     : #f0f0f0;
+}
+
+#content-container {
+  height               : calc( 100vh - 50px - 30px - 40px );
+  display              : flex;
+  flex-direction       : column;
+  padding              : 3px;
+  padding-top          : 0px;
+}
+#main-area {
+  flex-grow            : 1;
+  display              : flex;
+  padding-bottom       : 3px;
+  max-height           : 100%; //calc(100% - 250px);
+}
+#aside-wrapper {
+  display              : none; //block;
+  width                : 300px;
+  margin-right         : 3px;
+}
+#content-wrapper {
+  flex-grow            : 1;
+}
+#info-area-wrapper {
+  display              : none; //block;
+  height               : 250px;
+}
+
+//modules
+@import "../modules/aside/aside.scss";
+@import "../modules/buy-sell-btns/buy-sell-btns.scss";
+@import "../modules/content/content.scss";
+@import "../modules/graphic-panel/graphic-panel.scss";
+@import "../modules/header/header.scss";
+@import "../modules/info-area/info-area.scss";
+@import "../modules/info-tape/info-tape.scss";
+@import "../modules/nav/nav.scss";
+@import "../modules/popups/popups.scss";
+@import "../modules/scrollTable-fixHeader/scrollTable-fixHeader.scss";
+@import "../modules/tabs/tabs.scss";

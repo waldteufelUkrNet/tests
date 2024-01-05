@@ -1,0 +1,20 @@
+плюшки anychart:
+
+1. два і більше графіка на одній осі - вписати в plot різні цифри:
+  chart.plot(0).candlestick(mapping);
+  chart.plot(1).spline(mapping);
+
+2. накладені один на одного графіки - вписати в plot одну і ту ж цифру:
+  chart.plot(0).candlestick(mapping);
+  chart.plot(0).spline(mapping);
+
+3. переключення способу відображення графіка https://docs.anychart.com/Stock_Charts/Series/Series_Type
+
+============
+
+
+
+
+
+add/delete plots  : https://docs.anychart.com/Stock_Charts/Chart_Plots
+add/delete series : https://docs.anychart.com/Working_with_Data/Series_Manipulation
